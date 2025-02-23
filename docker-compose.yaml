@@ -1,0 +1,7 @@
+﻿services:
+  db:
+    image: postgres
+    env_file:
+      - ./sist-gestion-backend/.env
+    ports:
+      - "5432:5432"
