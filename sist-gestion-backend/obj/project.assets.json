@@ -5018,11 +5018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/guido/Desktop/sis-gestion/sist-gestion/sist-gestion-backend/sist-gestion-backend.csproj",
+      "projectUniqueName": "/Users/guido/Desktop/sist-gestion-back/sist-gestion-backend/sist-gestion-backend.csproj",
       "projectName": "sist-gestion-backend",
-      "projectPath": "/Users/guido/Desktop/sis-gestion/sist-gestion/sist-gestion-backend/sist-gestion-backend.csproj",
+      "projectPath": "/Users/guido/Desktop/sist-gestion-back/sist-gestion-backend/sist-gestion-backend.csproj",
       "packagesPath": "/Users/guido/.nuget/packages/",
-      "outputPath": "/Users/guido/Desktop/sis-gestion/sist-gestion/sist-gestion-backend/obj/",
+      "outputPath": "/Users/guido/Desktop/sist-gestion-back/sist-gestion-backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/guido/.nuget/NuGet/NuGet.Config"
