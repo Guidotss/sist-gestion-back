@@ -10,7 +10,7 @@ public class BaseEntity
    public bool IsDeleted { get; set; }
 
 
-   public BaseEntity() {}
+   protected BaseEntity() {}
 
    public void Initialize()
    {

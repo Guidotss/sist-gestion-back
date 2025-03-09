@@ -1,9 +1,10 @@
 using System.Data;
+using Microsoft.Extensions.Configuration; 
 using Npgsql;
 
-namespace sist_gestion_backend.Context;
 
 
+namespace Infraestructure.Context; 
 public class DapperContext
 {
     private readonly IConfiguration _config;
