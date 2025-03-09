@@ -34,3 +34,9 @@
 - [ ] Crear endpoint `GET /projects/:id/gantt` para datos del gráfico Gantt.
 - [ ] Implementar endpoint `POST /projects/:id/invite` para invitar miembros (generar enlace o enviar email).
 - [ ] Añadir soporte para reglas automáticas (ej. archivar tareas completadas tras X días) con Bull.
+
+
+## Iniciar el proyecto
+
+1. Cambiar el nombre del archivo `.env.template` a `.env` y agregar las variables de entorno.
+2. Ejecutar el archivo `db_setup.sql` para crear la base de datos.
