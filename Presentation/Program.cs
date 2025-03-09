@@ -1,4 +1,3 @@
-using sist_gestion_backend.Context;
 using DotNetEnv; 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +9,6 @@ builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
 
-builder.Services.AddSingleton<DapperContext>(); 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
