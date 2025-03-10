@@ -4,14 +4,14 @@
     "/Users/guido/Desktop/sist-gestion-back/Presentation/Presentation.csproj": {}
   },
   "projects": {
-    "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj": {
+    "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
-        "projectName": "Infraestructure",
-        "projectPath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
+        "projectUniqueName": "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj",
         "packagesPath": "/Users/guido/.nuget/packages/",
-        "outputPath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/",
+        "outputPath": "/Users/guido/Desktop/sist-gestion-back/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/guido/.nuget/NuGet/NuGet.Config"
@@ -44,7 +44,75 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
+        "projectName": "Infraestructure",
+        "projectPath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
+        "packagesPath": "/Users/guido/.nuget/packages/",
+        "outputPath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guido/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj": {
+                "projectPath": "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.1.66, )"
@@ -128,6 +196,10 @@
               "version": "[3.1.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
             },

@@ -11,3 +11,6 @@
 /Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/Debug/net9.0/refint/Infraestructure.dll
 /Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/Debug/net9.0/Infraestructure.pdb
 /Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/Debug/net9.0/ref/Infraestructure.dll
+/Users/guido/Desktop/sist-gestion-back/Infraestructure/bin/Debug/net9.0/Domain.dll
+/Users/guido/Desktop/sist-gestion-back/Infraestructure/bin/Debug/net9.0/Domain.pdb
+/Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/Debug/net9.0/Infraest.B0D41582.Up2Date

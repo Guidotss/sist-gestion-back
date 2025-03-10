@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U+8+RFB/RDE=",
+  "dgSpecHash": "p2oWCzYwLaM=",
   "success": true,
   "projectFilePath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
   "expectedPackageFiles": [
+    "/Users/guido/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/guido/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",
     "/Users/guido/.nuget/packages/microsoft.extensions.configuration/10.0.0-preview.1.25080.5/microsoft.extensions.configuration.10.0.0-preview.1.25080.5.nupkg.sha512",
     "/Users/guido/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.0-preview.1.25080.5/microsoft.extensions.configuration.abstractions.10.0.0-preview.1.25080.5.nupkg.sha512",

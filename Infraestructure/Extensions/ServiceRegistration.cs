@@ -1,4 +1,8 @@
+using Domain.DataSources;
+using Domain.Repositories;
 using Infraestructure.Context;
+using Infraestructure.DataSources;
+using Infraestructure.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +14,8 @@ public static class ServiceRegistration
     {
         services.AddSingleton<DapperContext>();
         
+        services.AddScoped<IUserDataSource, UserDataSourceImpl>();
+        services.AddScoped<IUserRepository, UserRepositoryImpl>(); 
 
         return services; 
     }
