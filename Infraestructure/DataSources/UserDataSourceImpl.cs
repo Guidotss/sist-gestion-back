@@ -26,7 +26,9 @@ public class UserDataSourceImpl : IUserDataSource
     {
         using var connection = _context.CreateConnection();
         var query = "SELECT * FROM Users WHERE email = @Email AND deleted = false";
-        return await connection.QueryFirstOrDefaultAsync<User>(query, new { Email = email }); 
+
+        var user = await connection.QueryFirstOrDefaultAsync<User>(query, new { Email = email });
+        return user; 
     }
 
     public Task<User> CreateUser(CreateUserDto user)

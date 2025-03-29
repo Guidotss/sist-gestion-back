@@ -15,7 +15,9 @@ public static class ServiceRegistration
         services.AddSingleton<DapperContext>();
         
         services.AddScoped<IUserDataSource, UserDataSourceImpl>();
-        services.AddScoped<IUserRepository, UserRepositoryImpl>(); 
+        services.AddScoped<IUserRepository, UserRepositoryImpl>();
+        services.AddScoped<IAuthDataSource, AuthDataSourceImpl>();
+        services.AddScoped<IAuthRepository, AuthRepository>(); 
 
         return services; 
     }

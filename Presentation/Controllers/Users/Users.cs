@@ -40,23 +40,5 @@ namespace sist_gestion_backend.Controllers.Auth
         {
             return "value";
         }
-
-        // POST api/<Users>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<Users>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<Users>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

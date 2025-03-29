@@ -10,3 +10,15 @@
 /Users/guido/Desktop/sist-gestion-back/Domain/obj/Debug/net9.0/refint/Domain.dll
 /Users/guido/Desktop/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.pdb
 /Users/guido/Desktop/sist-gestion-back/Domain/obj/Debug/net9.0/ref/Domain.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/bin/Debug/net9.0/Domain.deps.json
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/bin/Debug/net9.0/Domain.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/bin/Debug/net9.0/Domain.pdb
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/refint/Domain.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/Domain.pdb
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/obj/Debug/net9.0/ref/Domain.dll

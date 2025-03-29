@@ -430,11 +430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
+      "projectUniqueName": "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Infraestructure/Infraestructure.csproj",
       "projectName": "Infraestructure",
-      "projectPath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/Infraestructure.csproj",
+      "projectPath": "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Infraestructure/Infraestructure.csproj",
       "packagesPath": "/Users/guido/.nuget/packages/",
-      "outputPath": "/Users/guido/Desktop/sist-gestion-back/Infraestructure/obj/",
+      "outputPath": "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Infraestructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/guido/.nuget/NuGet/NuGet.Config"
@@ -450,8 +450,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj": {
-              "projectPath": "/Users/guido/Desktop/sist-gestion-back/Domain/Domain.csproj"
+            "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/Domain.csproj": {
+              "projectPath": "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/Domain.csproj"
             }
           }
         }

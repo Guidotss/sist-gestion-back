@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KY1Ymlga7ek=",
+  "dgSpecHash": "ndDusDiRypQ=",
   "success": true,
-  "projectFilePath": "/Users/guido/Desktop/sist-gestion-back/Presentation/Presentation.csproj",
+  "projectFilePath": "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/Presentation.csproj",
   "expectedPackageFiles": [
     "/Users/guido/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/guido/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",
