@@ -1,4 +1,5 @@
 using Domain.DataSources;
+using Domain.Dto.Requests;
 using Domain.Entities;
 using Domain.Models;
 using Domain.Repositories;
@@ -18,9 +19,9 @@ public class UserRepositoryImpl(IUserDataSource dataSource) : IUserRepository
         return dataSource.GetUser(email);
     }
 
-    public Task<User> CreateUser(User user)
+    public Task<User> CreateUser(CreateUserDto user)
     {
-        throw new NotImplementedException();
+        return dataSource.CreateUser(user); 
     }
 
     public Task<User> UpdateUser(User user)

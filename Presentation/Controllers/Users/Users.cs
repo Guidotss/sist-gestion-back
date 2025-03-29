@@ -1,3 +1,4 @@
+using Domain.Dto.Requests;
 using Domain.Dto.Responses;
 using Domain.Models;
 using Domain.Repositories;
@@ -40,5 +41,40 @@ namespace sist_gestion_backend.Controllers.Auth
         {
             return "value";
         }
+<<<<<<< HEAD
+=======
+
+        // POST api/<Users>
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] CreateUserDto user)
+        {
+            try
+            {
+                var createdUser = await _repository.CreateUser(user);
+                var response = new CreateResponseDto<User>
+                {
+                    Success = true,
+                    Data = createdUser,
+                };
+                return Ok(response);
+                
+            }catch(Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        // PUT api/<Users>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
+        {
+        }
+
+        // DELETE api/<Users>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
+>>>>>>> ba709163bf6d6e2704b27ac779ace975487b22b3
     }
 }
