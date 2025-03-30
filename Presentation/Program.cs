@@ -1,3 +1,5 @@
+using Domain.UseCases;
+using Domain.UseCases.Implementations;
 using DotNetEnv;
 using Infraestructure.Extensions;
 
@@ -8,7 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
+
+// Infraestructure
 builder.Services.AddInfraestructure(builder.Configuration);
+
+// Use cases (Domain)
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(LoginUseCase).Assembly));
 
 builder.Services.AddSwaggerGen(c =>
 {

@@ -57,7 +57,6 @@ public class AuthDataSourceImpl(DapperContext _context, IUserRepository _userRep
         {
             throw new CustomException("Invalid credentials", 400);
         }
-
         bool checkPassword = BCrypt.Net.BCrypt.Verify(user.Password, checkUser.Password);
         
         if(!checkPassword)
@@ -70,6 +69,7 @@ public class AuthDataSourceImpl(DapperContext _context, IUserRepository _userRep
             Name = checkUser.Name,
             Email = checkUser.Email
         };
+        
         return loggedUser;
     }
 

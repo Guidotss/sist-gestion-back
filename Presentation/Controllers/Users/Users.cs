@@ -13,58 +13,13 @@ namespace sist_gestion_backend.Controllers.Auth
     {
         private readonly IUserRepository _repository = repository;
 
-        // GET: api/<Users>
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            try
-            {
-                var users = await _repository.GetUsers();
-                var response = new GetAllResponseDto<User>
-                {
-                    Success = true,
-                    Data = users,
-                    Total = users.Count(),
-                    Page = 1,
-                }; 
-                return Ok(response);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
-
         // GET api/<Users>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
-<<<<<<< HEAD
-=======
-
-        // POST api/<Users>
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CreateUserDto user)
-        {
-            try
-            {
-                var createdUser = await _repository.CreateUser(user);
-                var response = new CreateResponseDto<User>
-                {
-                    Success = true,
-                    Data = createdUser,
-                };
-                return Ok(response);
-                
-            }catch(Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
-
-        // PUT api/<Users>/5
+// PUT api/<Users>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
@@ -75,6 +30,5 @@ namespace sist_gestion_backend.Controllers.Auth
         public void Delete(int id)
         {
         }
->>>>>>> ba709163bf6d6e2704b27ac779ace975487b22b3
     }
 }

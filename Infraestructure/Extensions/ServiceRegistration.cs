@@ -1,8 +1,12 @@
 using Domain.DataSources;
 using Domain.Repositories;
+using Domain.Services;
+using Domain.UseCases;
+using Domain.UseCases.Implementations;
 using Infraestructure.Context;
 using Infraestructure.DataSources;
 using Infraestructure.Repositories;
+using Infraestructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,7 +21,8 @@ public static class ServiceRegistration
         services.AddScoped<IUserDataSource, UserDataSourceImpl>();
         services.AddScoped<IUserRepository, UserRepositoryImpl>();
         services.AddScoped<IAuthDataSource, AuthDataSourceImpl>();
-        services.AddScoped<IAuthRepository, AuthRepository>(); 
+        services.AddScoped<IAuthRepository, AuthRepository>();
+        services.AddScoped<IJwtService, JwtService>();
 
         return services; 
     }

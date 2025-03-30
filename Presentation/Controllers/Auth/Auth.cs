@@ -1,6 +1,12 @@
 using Domain.Dto.Requests;
+using Domain.Dto.Requests.Auth;
+using Domain.Dto.Responses;
 using Domain.Exceptions;
 using Domain.Repositories;
+using Domain.Services;
+using Domain.UseCases;
+using Domain.UseCases.Implementations;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,8 +14,9 @@ namespace sist_gestion_backend.Controllers.Auth
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Auth(IAuthRepository _repository) : ControllerBase
+    public class Auth(IMediator _mediator) : ControllerBase
     {
+        
         private IActionResult HandleErrors(dynamic error)
         {
             if (error is CustomException customException)
@@ -46,10 +53,8 @@ namespace sist_gestion_backend.Controllers.Auth
         {
             try
             {
-                //TODO: Implementar JWT
-                var user = await _repository.Login(loginDto);
-                return Ok(user);
-                
+                var response = await _mediator.Send(new LoginRequest(loginDto)); 
+                return Ok(response); 
             }catch(Exception ex)
             {
                 return HandleErrors(ex);
@@ -59,10 +64,10 @@ namespace sist_gestion_backend.Controllers.Auth
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] CreateUserDto registerDto)
         {
-            try { 
-                //TODO: Implementar JWT
-                var newUser = await _repository.Register(registerDto);
-                return Ok(newUser);
+            try
+            {
+                var response = await _mediator.Send(new RegisterRequest(registerDto));
+                return Ok(response);
             }
             catch (Exception ex)
             {

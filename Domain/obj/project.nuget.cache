@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CERZ8LSGdDw=",
+  "dgSpecHash": "2kSGOZr9QRk=",
   "success": true,
   "projectFilePath": "/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Domain/Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/guido/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/Users/guido/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/guido/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -12,23 +12,15 @@ public class UserDataSourceImpl(DapperContext context) : IUserDataSource
     public async Task<User> GetUser(Guid id)
     {
         using var connection = context.CreateConnection();
-        const string query = "SELECT Id, Name, Email FROM Users WHERE Id = @Id AND deleted = false RETURNING Id, Name, Email";
+        const string query = "SELECT Id, Name, Email, Password FROM Users WHERE Id = @Id AND deleted = false";
         return await connection.QueryFirstOrDefaultAsync<User>(query, new { Id = id });
     }
 
     public async Task<User> GetUser(string email)
     {
-<<<<<<< HEAD
-        using var connection = _context.CreateConnection();
-        var query = "SELECT * FROM Users WHERE email = @Email AND deleted = false";
-
-        var user = await connection.QueryFirstOrDefaultAsync<User>(query, new { Email = email });
-        return user; 
-=======
         using var connection = context.CreateConnection();
-        const string query = "SELECT Id, Name, Email FROM Users WHERE email = @Email AND deleted = false RETURNING Id, Name, Email";
+        const string query = "SELECT Id, Name, Email, Password FROM Users WHERE email = @Email AND deleted = false";
         return await connection.QueryFirstOrDefaultAsync<User>(query, new { Email = email }); 
->>>>>>> ba709163bf6d6e2704b27ac779ace975487b22b3
     }
 
     public async Task<User> CreateUser(CreateUserDto user)

@@ -468,3 +468,10 @@
 /Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/obj/Debug/net9.0/Presentation.pdb
 /Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/obj/Debug/net9.0/Presentation.genruntimeconfig.cache
 /Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/obj/Debug/net9.0/ref/Presentation.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/MediatR.dll
+/Users/guido/Desktop/Guido/sistema-gestion/sist-gestion-back/Presentation/bin/Debug/net9.0/MediatR.Contracts.dll
