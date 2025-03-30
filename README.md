@@ -1,15 +1,14 @@
 # To-Do List Backend
 
 ## Fase 1: Base de Datos y Modelos
-- [ ] Crear tabla `users` (id, email, password_hash, rol).
-- [ ] Crear tabla `projects` (id, nombre, descripción, fecha_inicio, fecha_fin, admin_id).
-- [ ] Crear tabla `tasks` (id, project_id, título, descripción, estado, prioridad, asignado_id, fecha_límite).
-- [ ] Crear tabla `task_dependencies` (id, tarea_origen, tarea_destino).
+- [X] Crear tabla `users` (id, email, password_hash, rol).
+- [X] Crear tabla `projects` (id, nombre, descripción, fecha_inicio, fecha_fin, admin_id).
+- [X] Crear tabla `tasks` (id, project_id, título, descripción, estado, prioridad, asignado_id, fecha_límite).
+- [X] Crear tabla `task_dependencies` (id, tarea_origen, tarea_destino).
 
 ## Fase 2: Autenticación
-- [ ] Implementar endpoint `POST /auth/register` (hash con bcrypt).
-- [ ] Implementar endpoint `POST /auth/login` (generar JWT).
-- [ ] Crear middleware `authMiddleware` para proteger rutas con JWT.
+- [X] Implementar endpoint `POST /auth/register` (hash con bcrypt).
+- [X] Implementar endpoint `POST /auth/login` (generar JWT).
 
 ## Fase 3: API Básica
 - [ ] Crear endpoint `GET /projects` (lista de proyectos del usuario).
